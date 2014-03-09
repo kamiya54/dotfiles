@@ -1,0 +1,9 @@
+[core]
+	editor = /usr/bin/vim
+[color]
+	ui = true
+[user]
+	name = kamiya54
+	email = kamiya54@gmail.com
+[push]
+	default = simple
