@@ -6,7 +6,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'Zencoding.vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'tpope/vim-rails'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
@@ -62,6 +62,17 @@ set showmatch
 
 
 "入力補助
-imap <C-j> <esc>
+inoremap <C-j> <esc>
+inoremap <C-k> <esc>
+inoremap <silent> jj <esc>
+inoremap <silent> kk <esc>
 noremap ; :
 noremap : ;
+
+
+" 挿入モードでのカーソル移動
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
