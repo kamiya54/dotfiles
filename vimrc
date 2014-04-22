@@ -1,3 +1,4 @@
+set clipboard=unnamed,autoselect
 set nocompatible
 filetype off
 
@@ -37,6 +38,9 @@ set cmdheight=2 " コマンドラインの高さを二行に
 set wildmenu " コマンドライン補完を便利に
 set showcmd " タイプ途中のコマンドを画面最下行に表示
 set hlsearch " 検索語を強調表示（<C-L>を押すと現在の強調表示を解除する）
+set encoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
+set viminfo='500,<10000,s1000,\"500
 
 
 "検索時の設定
@@ -75,4 +79,11 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
+
+
+"emmetの設定 ctrl + e で展開
+let g:user_emmet_expandabbr_key = '<c-e>'
+let g:user_emmet_settings = {
+      \ 'lang' : 'ja'
+      \ }
 
