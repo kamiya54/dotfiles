@@ -12,6 +12,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
+Bundle 'The-NERD-tree'
 
 filetype plugin indent on 
 
