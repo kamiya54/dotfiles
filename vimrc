@@ -88,3 +88,10 @@ let g:user_emmet_settings = {
       \ 'lang' : 'ja'
       \ }
 
+set clipboard+=unnamed
+
+nnoremap <buffer><Space>r :R<CR>
+nnoremap <buffer><Space>a :A<CR>
+nnoremap <buffer><Space>m :Rmodel<Space>
+nnoremap <buffer><Space>c :Rcontroller<Space>
+nnoremap <buffer><Space>v :Rview<Space>

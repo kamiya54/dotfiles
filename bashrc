@@ -1,4 +1,3 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 alias v='vim'
 alias vi='vim'
 alias ls="ls -G"
@@ -13,3 +12,9 @@ alias ......="cd ../../../../.."
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# added by travis gem
+[ -f /Users/kamiyayusuke/.travis/travis.sh ] && source /Users/kamiyayusuke/.travis/travis.sh
+
+export PATH="$HOME/.rbenv/shims:$PATH"
+eval "$(rbenv init -)"
